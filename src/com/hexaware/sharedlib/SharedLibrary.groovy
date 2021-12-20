@@ -8,7 +8,7 @@ public class SharedLibrary {
     this.pipeline = pipeline
   }
   
-  public void startBuild(pipeline) {
+  public void startBuild() {
     pipeline.steps.sh "echo 'Hello, World!'"
   }
 }
