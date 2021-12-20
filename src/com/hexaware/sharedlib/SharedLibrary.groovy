@@ -1,14 +1,13 @@
 package com.hexaware.sharedlib;
 
 public class SharedLibrary {
-  def pipeline
+  def steps
   
-  public SharedLibrary(pipeline) {
-    pipeline.steps.echo(pipeline.getClass().toString())
-    this.pipeline = pipeline
+  public SharedLibrary(steps) {
+    this.steps = steps
   }
   
   public void startBuild() {
-    pipeline.steps.sh "echo 'Hello, World!'"
+    steps.echo "Hello, World!"
   }
 }
